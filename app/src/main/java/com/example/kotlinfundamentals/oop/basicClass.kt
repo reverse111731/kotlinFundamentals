@@ -11,7 +11,7 @@ fun main(){
 
 }
 
-class Person (firstName: String = "Jude", lastName: String = "Sy"){
+private class Person(firstName: String = "Jude", lastName: String = "Sy"){
     //Member Variables / Properties
     var age: Int? = null
     var name: String? = null
