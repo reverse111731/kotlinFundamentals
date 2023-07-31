@@ -17,11 +17,11 @@ class Circle(var radius: Double) : Shape() {
     }
 }
 
-//class Triangle(var base: Double, var height: Double) : Shape(){
-//    override fun calculateArea(): Double {
-//        return 0.5 * (base * height)
-//    }
-//}
+class Triangle(var base: Double, var height: Double) : Shape(){
+    override fun calculateArea(): Double {
+        return 0.5 * (base * height)
+    }
+}
 
 interface AreaCalculator {
     fun calculate(shape: Shape): Double
@@ -39,9 +39,14 @@ class CircleCalculator : AreaCalculator {
     }
 }
 
-//class TriangleCalculator : AreaCalculator {
-//    override fun calculate(shape: Shape): Double {
-//        val triangle = shape as Triangle
-//        return triangle.base * triangle.height / 2.0
-//    }
-//}
+class TriangleCalculator : AreaCalculator {
+    override fun calculate(shape: Shape): Double {
+        val triangle = shape as Triangle
+        return triangle.base * triangle.height / 2.0
+    }
+}
+
+
+fun main(){
+
+}

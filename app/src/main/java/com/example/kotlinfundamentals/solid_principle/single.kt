@@ -7,11 +7,21 @@ class Student {
 
     // Only Calculate Grade
     fun calculateGrades() : String {
-        return ""
+        return "Student grade being calculated"
     }
 
     // Only Prints student grade
     fun printStudentInformation() {
         println("Student grade .....")
     }
+}
+
+fun main(){
+    var student:Student = Student()
+
+    student.printStudentInformation()
+
+    val test = student.calculateGrades()
+
+    print(test)
 }
